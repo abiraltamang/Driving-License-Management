@@ -1,7 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import HomePage from "../pages/HomePage";
 import Layout from "../components/Layout";
-import ErrorPage from "../pages/ErrorPage"
+import ErrorPage from "../pages/ErrorPage";
+import PersonalDetailFormPage from '../pages/PersonalDetailFormPage'
 
 const router = createBrowserRouter([
     {
@@ -12,6 +13,10 @@ const router = createBrowserRouter([
             {
                 path: "",
                 element: <HomePage />
+            },
+            {
+                path: "/personaldetail",
+                element : <PersonalDetailFormPage />
             }
         ]
     }
