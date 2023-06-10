@@ -1,6 +1,7 @@
 import React from 'react';
-import { Formik, Field, Form, ErrorMessage } from 'formik';
+import { Formik, Form } from 'formik';
 import * as Yup from 'yup';
+import TextInput from './TextInput';
 
 const PersonalDetailForm = () => {
   const initialValues = {
@@ -33,66 +34,11 @@ const PersonalDetailForm = () => {
         onSubmit={handleSubmit}
       >
         <Form>
-          <div className="mb-4">
-            <label htmlFor="firstName" className="block font-medium mb-1">
-              First Name
-            </label>
-            <Field
-              type="text"
-              id="firstName"
-              name="firstName"
-              className="border border-gray-300 rounded px-3 py-2 w-full"
-            />
-            <ErrorMessage name="firstName" component="p" className="text-red-500" />
-          </div>
-          <div className="mb-4">
-            <label htmlFor="lastName" className="block font-medium mb-1">
-              Last Name
-            </label>
-            <Field
-              type="text"
-              id="lastName"
-              name="lastName"
-              className="border border-gray-300 rounded px-3 py-2 w-full"
-            />
-            <ErrorMessage name="lastName" component="p" className="text-red-500" />
-          </div>
-          <div className="mb-4">
-            <label htmlFor="email" className="block font-medium mb-1">
-              Email Address
-            </label>
-            <Field
-              type="email"
-              id="email"
-              name="email"
-              className="border border-gray-300 rounded px-3 py-2 w-full"
-            />
-            <ErrorMessage name="email" component="p" className="text-red-500" />
-          </div>
-          <div className="mb-4">
-            <label htmlFor="address" className="block font-medium mb-1">
-              Address
-            </label>
-            <Field
-              as="textarea"
-              id="address"
-              name="address"
-              className="border border-gray-300 rounded px-3 py-2 w-full"
-            />
-            <ErrorMessage name="address" component="p" className="text-red-500" />
-          </div>
-          <div className="mb-4">
-            <label htmlFor="phone" className="block font-medium mb-1">
-              Phone Number
-            </label>
-            <Field
-              type="text"
-              id="phone"
-              name="phone"
-              className="border border-gray-300 rounded px-3 py-2 w-full"
-            />
-            <ErrorMessage name="phone" component="p" className="text-red-500" />
-          </div>
+          <TextInput type="text" id="firstName" name="firstName" label="First Name" />
+          <TextInput type="text" id="lastName" name="lastName" label="Last Name" />
+          <TextInput type="email" id="email" name="email" label="Email Address" />
+          <TextInput as="textarea" id="address" name="address" label="Address" />
+          <TextInput type="text" id="phone" name="phone" label="Phone Number" />
           <button
             type="submit"
             className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
