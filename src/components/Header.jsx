@@ -6,7 +6,7 @@ const Header = () => {
     <div className='mt-3 ml-2'>
       <header className='flex justify-center'>
         <div>
-          <img src="public/nepal-govt.png" alt="Government official photo" className='h-32 w-32 mr-3' />
+          <img src="/nepal-govt.png" alt="Government official photo" className='h-32 w-32 mr-3' />
         </div>
         <div className='mt-3 font-medium'>
           <p>Government of Nepal</p>
