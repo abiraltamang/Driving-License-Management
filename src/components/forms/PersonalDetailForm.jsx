@@ -149,7 +149,7 @@ const PersonalDetailForm = () => {
   };
 
   return (
-    <div className="w-full bg-slate-100 px-8 mb-4 py-3 rounded-lg">
+    <div className="w-full bg-slate-100 px-3 lg:px-8 mb-4 py-3 rounded-lg">
       <Formik
         initialValues={initialValues}
         validationSchema={validationSchema}
