@@ -224,9 +224,9 @@ const PersonalDetailForm = () => {
             />
             <TextInput
               type="select"
-              id="gender"
-              name="gender"
-              label="Gender"
+              id="guardian"
+              name="guardian"
+              label="guardian"
               options={[
                 { value: "father", label: "Father" },
                 { value: "mother", label: "Mother" },
