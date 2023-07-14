@@ -14,7 +14,7 @@ const HomePage = () => {
         <Link to="/personaldetail">
           <ProfileDetailCard />
         </Link>
-        <Link to={"/addcitizenship"}>
+        <Link to={"/citizenshipdetail"}>
           <CitizenshipDetail />
         </Link>
         <Link to={"/writtenexam"}>
